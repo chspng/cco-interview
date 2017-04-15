@@ -71,36 +71,55 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container">
-           
-        
-         <div class="row">
 
-         <!-- backtotop arrow -->
-         <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        <!--
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
             <h1>Cancer in Ontario</h1>
-            <div role="tabpanel">
-                <div class="col-sm-3">
-                    <ul class="nav nav-pills brand-pills nav-stacked" role="tablist">
-                        <li role="presentation" class="brand-nav active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">What is cancer?</a></li>
-                        <li role="presentation" class="brand-nav"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">What is the cancer journey?</a></li>
-                        <li role="presentation" class="brand-nav"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">How are cancer services organized?</a></li>
-                        <li role="presentation" class="brand-nav"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">How many Ontarians are affected by cancer?</a></li>
+
+            <div class="tabbable-panel">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs ">
+                        <li class="active">
+                            <a href="#tab_default_1" data-toggle="tab">
+                            What is cancer? </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_2" data-toggle="tab">
+                            What is the cancer journey?</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_3" data-toggle="tab">
+                            How are cancer services organized?</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_4" data-toggle="tab">
+                            How many Ontarians are affected by cancer?</a>
+                        </li>
                     </ul>
-                </div>
-            <div class="col-sm-9">
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="tab1">
-                        <h2>What is Cancer?</h2>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_default_1">
+                            <h2>What is Cancer?</h2>
                         <p>Cancer refers to a group of diseases with abnormal cell growth, with the potential to spread to other parts of the body. It is not a single disease. It describes a group of more than 200 individual diseases, each with its own unique causes, risk factors and care pathways. </p> 
 
                         <p>It takes more than one physician or clinic to treat and control cancer; it takes an entire healthcare team in a variety of institutions and care settings. </p>
 
                         <br>
                         <p><strong style="font-size:20px; color:rgb(105,96,132);">Our goal</strong> is to reduce the number of people diagnosed with cancer and to ensure that patients receive high quality care at every step in their care. That means we have to attend to the entire disease pathway for each cancer beginning with prevention through to palliative care.</p>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="tab2">
-                        <h2>What is the Cancer Journey?</h2>
+                            <p>
+                                <a class="btn btn-success" href="http://j.mp/metronictheme" target="_blank">
+                                    Learn more...
+                                </a>
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="tab_default_2">
+                            <h2>What is the Cancer Journey?</h2>
                         <p>The cancer system begins with prevention and health promotion, with the ultimate goal being to prevent cancer in the first place. The detection and care of cancer patients involves every area of the healthcare system in some way.</p>
 
                    <!-- <br>
@@ -176,20 +195,19 @@
                           </div>
                         </li>
             
-                    </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="tab3">
-                        <h2>How are Cancer Services Organized?</h2>
+                        </ul>
+                        </div>
+                        <div class="tab-pane" id="tab_default_3">
+                            <h2>How are Cancer Services Organized?</h2>
                     
-                    <p>The cancer system is organized into Regional Cancer Programs (RCPs) corresponding with the province's 14 Local Health Integration Networks (LHIN). RCPs are networks of healthcare providers, including regional cancer centres, and stakeholders including patient groups involved in providing cancer prevention, screening, and diagnostic and treatment services in the LHIN.</p>
-                    <div class="col-lg-12">
-                        <img class="col-lg-8 col-lg-offset-2 img-responsive" src="img/regions.jpg"/>
-                    </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="tab4">
-                        <h2>How many Ontarians are affected by cancer?</h2>
-                        
-                            <p>The following data looks at a incidence and mortality of cancer in Ontario for a subset of cancer types.  
+                            <p>The cancer system is organized into <b>Regional Cancer Programs (RCPs)</b> corresponding with the province's 14 Local Health Integration Networks (LHIN). RCPs are networks of healthcare providers, including regional cancer centres, and stakeholders including patient groups involved in providing cancer prevention, screening, and diagnostic and treatment services in the LHIN.</p>
+                               <img class="col-lg-6 col-lg-offset-3 img-responsive" src="img/map-of-ontario.jpg"/>
+                            
+                        </div>
+                         <div class="tab-pane" id="tab_default_4">
+                            <h2>How many Ontarians are affected by cancer?</h2>
+                            
+                            <p>The following data looks at a incidence and mortality of cancer in Ontario for a subset of cancer types. Hover over the cells to view more details, columns and rows can be sorted
                             <br>
                             <br>
                             <div class="btn-group">
@@ -203,20 +221,31 @@
                           
                               </ul>
                             </div>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Export graph <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">PDF</a></li>
+                                <li><a href="#">JPG</a></li>
+                                <li><a href="#">TIFF</a></li>
+                          
+                              </ul>
+                            </div>
                             <a class="btn btn-default page-scroll" href="#notes">See notes on dataset</a>
                             <a class="btn btn-default page-scroll" href="#stats">View explanation of statistical terms</a>
                     
                     <div class="col-lg-12">
-                        <div class='tableauPlaceholder' id='viz1492206164683' style='position: relative'><noscript><a href='#'><img alt='heatmaps ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmaps&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='cancer_incidence_mortality&#47;heatmaps' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmaps&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1492206164683');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1204px';vizElement.style.height='1269px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                        <br>
+                        <div class='tableauPlaceholder' id='viz1492267425377' style='position: relative'><noscript><a href='#'><img alt='heatmaps ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmaps&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='cancer_incidence_mortality&#47;heatmaps' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmaps&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1492267425377');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='854px';vizElement.style.height='1469px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                     </div>
-                            
-                           
-                    </div>
-                        <div id="stats">
+                    
+                    <div id="stats">
                             <h3>Statistical Terms</h3>
                                 <ul>
                                     <li>Incidence</li>
                                     <li>Mortality</li>
+                                    <li>Cancer site: refers to the location in the body of the initial (primary) cancer</li>
                                     <li><b>Age standardized rates</b>: Mean for age standardized incidence/mortality rate per 100,000 person-years, age-adjusted to the 2011 Canadian population; 95% Confidence intervals (CI), Tiwari method, for rates.</li>
                                     <li>Standard error (for age-standardized incidence/mortality rate): A measure of how much the age standardized rates vary. Typically, rates calculated using fewer case counts have higher standard errors.</li>
                                     <li>Lower 95% CI: Lower limit of 95% confidence interval for age-standardized incidence/mortality rate; An estimate of a potential lower value of the rate.</li>
@@ -234,10 +263,33 @@
                                 <li>To be comparable with the LHIN level statistics, Ontario statistics exclude cancer cases of unknown residence (LHIN); therefore, provincial statistics may not match the true counts and rates published elsewhere </li>
                                 <li>Counts of cancer cases were randomly rounded to multiples of 5 independent of other cells in the data to protect personal health information. As a result, sums of subgroup counts (e.g. LHIN) may not equal total counts (e.g. Ontario). </li>
                             </ul> 
+                         <img class="col-lg-8 img-responsive" src="img/map-of-ontario_nums.jpg"/>   
+                         <ol>
+                            <li>Erie St. Clair</li>
+                            <li>South West</li>
+                            <li>Waterloo Wellington</li>
+                            <li>Hamilton Niagara Haldimand Brant</li>
+                            <li>Central West</li>
+                            <li>Mississauga Halton</li>
+                            <li>Toronto Central</li>
+                            <li>Central</li>
+                            <li>Central East</li>
+                            <li>South East</li>
+                            <li>Champlain</li>
+                            <li>North Simcoe Muskoka</li>
+                            <li>North East</li>
+                            <li>North West</li>
+                         </ol>
+                    </div>  
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+    
     </div>
 </div>
         </div>
