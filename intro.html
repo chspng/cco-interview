@@ -207,7 +207,7 @@ Licensed under MIT
                          <div class="tab-pane" id="tab_default_4">
                             <h2>How many Ontarians are affected by cancer?</h2>
                                 
-                            <p>The following data looks at a incidence and mortality of cancer in Ontario for a subset of cancer types. Hover over the cells to view more details, columns and rows can be sorted
+                            <p>The number of people who are get cancer (incidence) and the number who die from cancer (mortality) varies widely by cancer type. Hover over the cells to view more details, use the filters to subset the data, and click on the rows and columns to sort the data.
                             <br>
                             <br>
                             <div class="btn-group">
@@ -232,39 +232,38 @@ Licensed under MIT
                           
                               </ul>
                             </div>
-                            <a class="btn btn-default page-scroll" href="#notes">See notes on dataset</a>
                             <a class="btn btn-default page-scroll" href="#stats">View explanation of statistical terms</a>
                     
-                    <div class="col-lg-12">
-                        <br>
-                        <div class='tableauPlaceholder' id='viz1492281474827' style='position: relative'><noscript><a href='#'><img alt='heatmap-wider ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmap-wider&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='cancer_incidence_mortality&#47;heatmap-wider' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmap-wider&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1492281474827');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1004px';vizElement.style.height='1269px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                    </div>
-                    
-                    <div id="stats">
-                            <h3>Statistical Terms</h3>
+                            <div class="col-lg-12">
+                                <br>
+                                <div class='tableauPlaceholder' id='viz1492281474827' style='position: relative'><noscript><a href='#'><img alt='heatmap-wider ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmap-wider&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='cancer_incidence_mortality&#47;heatmap-wider' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ca&#47;cancer_incidence_mortality&#47;heatmap-wider&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1492281474827');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1004px';vizElement.style.height='1269px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            </div>
+                            
+                            <div id="stats">
+                                    <h3>Statistical Terms</h3>
+                                        <ul>
+                                            <li>Incidence</li>
+                                            <li>Mortality</li>
+                                            <li>Cancer site: refers to the location in the body of the initial (primary) cancer</li>
+                                            <li><b>Age standardized rates</b>: Mean for age standardized incidence/mortality rate per 100,000 person-years, age-adjusted to the 2011 Canadian population; 95% Confidence intervals (CI), Tiwari method, for rates.</li>
+                                            <li>Standard error (for age-standardized incidence/mortality rate): A measure of how much the age standardized rates vary. Typically, rates calculated using fewer case counts have higher standard errors.</li>
+                                            <li>Lower 95% CI: Lower limit of 95% confidence interval for age-standardized incidence/mortality rate; An estimate of a potential lower value of the rate.</li>
+                                            <li>Upper 95% CI: Upper limit of 95% confidence interval for age-standardized incidence/mortality rate; An estimate of a potential higher value of the rate.</li>
+                                            <li>Count: Number of incidence/mortality; All case counts are randomly rounded to multiples of 5 in consideration of personal health information and the protection of privacy.</li>
+                                            <li>Population: Estimated population corresponding to the region, sex, age and year selected.</li>
+                                            <li>RSE (Relative Standard Error as a percentage): A measure of how reliable the rates are, calculated by dividing standard error by mean for each age-standardized incidence/mortality rate and multiplying by 100.</li>
+                                            <li>RSE flag: RSE in excess of 23% where  1 = RSE over 23%; 0 = RSE below 23%, The estimate was considered to be imprecise when RSE is greater than 23%, therefore the estimate is suppressed.</li>
+                                        </ul>
+                                </div>
+                                <div id="notes">
+                                <h3>Notes</h3> 
                                 <ul>
-                                    <li>Incidence</li>
-                                    <li>Mortality</li>
-                                    <li>Cancer site: refers to the location in the body of the initial (primary) cancer</li>
-                                    <li><b>Age standardized rates</b>: Mean for age standardized incidence/mortality rate per 100,000 person-years, age-adjusted to the 2011 Canadian population; 95% Confidence intervals (CI), Tiwari method, for rates.</li>
-                                    <li>Standard error (for age-standardized incidence/mortality rate): A measure of how much the age standardized rates vary. Typically, rates calculated using fewer case counts have higher standard errors.</li>
-                                    <li>Lower 95% CI: Lower limit of 95% confidence interval for age-standardized incidence/mortality rate; An estimate of a potential lower value of the rate.</li>
-                                    <li>Upper 95% CI: Upper limit of 95% confidence interval for age-standardized incidence/mortality rate; An estimate of a potential higher value of the rate.</li>
-                                    <li>Count: Number of incidence/mortality; All case counts are randomly rounded to multiples of 5 in consideration of personal health information and the protection of privacy.</li>
-                                    <li>Population: Estimated population corresponding to the region, sex, age and year selected.</li>
-                                    <li>RSE (Relative Standard Error as a percentage): A measure of how reliable the rates are, calculated by dividing standard error by mean for each age-standardized incidence/mortality rate and multiplying by 100.</li>
-                                    <li>RSE flag: RSE in excess of 23% where  1 = RSE over 23%; 0 = RSE below 23%, The estimate was considered to be imprecise when RSE is greater than 23%, therefore the estimate is suppressed.</li>
-                                </ul>
-                        </div>
-                        <div id="notes">
-                        <h3>Notes</h3> 
-                        <ul>
-                                <li>Missing data indicates imprecise estimates, or suppressed data to protect personal health information.</li>
-                                <li>To be comparable with the LHIN level statistics, Ontario statistics exclude cancer cases of unknown residence (LHIN); therefore, provincial statistics may not match the true counts and rates published elsewhere </li>
-                                <li>Counts of cancer cases were randomly rounded to multiples of 5 independent of other cells in the data to protect personal health information. As a result, sums of subgroup counts (e.g. LHIN) may not equal total counts (e.g. Ontario). </li>
-                            </ul> 
-                       
-                    </div>  
+                                        <li>Missing data indicates imprecise estimates, or suppressed data to protect personal health information.</li>
+                                        <li>To be comparable with the LHIN level statistics, Ontario statistics exclude cancer cases of unknown residence (LHIN); therefore, provincial statistics may not match the true counts and rates published elsewhere </li>
+                                        <li>Counts of cancer cases were randomly rounded to multiples of 5 independent of other cells in the data to protect personal health information. As a result, sums of subgroup counts (e.g. LHIN) may not equal total counts (e.g. Ontario). </li>
+                                    </ul> 
+                               
+                            </div>  
                         </div>
                     </div>
                 </div>
