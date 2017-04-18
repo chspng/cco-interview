@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Screening Stats</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll " href="intro.html">Cancer in Ontario</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Screening Data <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="breast.html">Breast Cancer</a></li>
+                        <li><a href="#">Cervical Cancer</a></li>
+                        <li><a href="#">Colorectal Cancer</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll current-page" href="demographics.html">Demographic Data</a>
+                    </li> 
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Demographic data</h1>
+                    <p>Socio-demographic and chronic disease risk factors vary for different regions in Ontario. Hover over the cells to view more details, use the filters to subset the data, and click on the rows and columns to sort the data.</p>
+                    <br>
+                    <br>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Download dataset <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Socio-demographic variables (Excel)</a></li>
+                        <li><a href="#">Chronic disease risk factors (Excel)</a></li>                    
+                  
+                      </ul>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Export graph <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">PDF</a></li>
+                        <li><a href="#">JPG</a></li>
+                        <li><a href="#">TIFF</a></li>
+                  
+                      </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <br>
+                        <div class='tableauPlaceholder' id='viz1492403962724' style='position: relative'><noscript><a href='#'><img alt='factors heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;demographic_factors&#47;factorsheatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='demographic_factors&#47;factorsheatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;demographic_factors&#47;factorsheatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1492403962724');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1004px';vizElement.style.height='869px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+
+                    <div class="col-lg-12">
+                  
+                            <h3>Notes</h3>
+                            <ul>                                            
+                                <li><b>Risk factors</b> for socio-demographic variables refer to social determinants of health (socio-demographic variables) from the Census of the Population (with the exception of household food insecurity which comes from the CCHS).</li>
+
+                                 <li><b>Risk factors</b> for chronic disease risk factors refer to modifiable risk factors, come from population-based sample surveys and are ecologic in nature.</li>
+                                
+                                <li><b>Region</b> refers to either Ontario or one of the Local Health Integration Networks (LHINs) in Ontario. The Ontario estimates exclude cases with unknown residence (LHINs). Estimates for Local Health Integration Networks (LHINs) were analyzed using survey weights that were calibrated to the LHIN geographic boundaries, where available.</li>
+
+                                <li><b>Sex</b> refers to a person's self-reported sex, rather than their gender identity. (For socio-demographic variables, sex is recorded for both male and female only.)</li>
+
+                                <li><b>Year</b> refers to the calendar year in which the survey was conducted.</li>
+
+                                <li><b>Percentage</b> is the prevalence estimate. For socio-demographic variables, it refers to the percentage of the population with the risk factor aged 15+. For chronic disease risk factors, it is age-standardized to the age distribution of the 2011 Canadian population using the age groups from the CCHS person-level sampling strategy: 18–29, 30–44, 45–64 and 65+.  </li>                                
+
+                                <li><b>Standard error</b> is a measure of how much the estimates vary. Typically, rates calculated using fewer case counts have higher standard errors. (For socio-demographic variables, CV was calculated for household food insecurity only.)</li>
+
+                                <li><b>Upper and Lower 95% CI</b> (confidence interval) are estimates of the potential lower and upper value of the age-standardized incidence/mortality rate. (For socio-demographic variables, CV was calculated for household food insecurity only.)</li>
+
+                                <li><b>Coefficient of Variance (CV)</b> is measure to determine the sampling variability of the estimate, calculated by dividing standard deviation by mean for each age-standardized estimate and multiplying by 100. (For socio-demographic variables, CV was calculated for household food insecurity only.)</li>
+
+                                <li><b>CV flag:</b> In accordance with guidelines from Statistics Canada, the co-efficient of variation (CV) was calculated to determine the sampling variability of the estimate. Estimates with a CV of 0.0–16.5 can be released without any special notation. Estimates with a CV of 16.6–33.3 can be released when accompanied by a warning cautioning users of the high sampling variability associated with the estimates. Such estimates are identified with a “Y” in the CV_flag column of the data tables in the online tool. For estimates with a CV of greater than 33.3, Statistics Canada recommends to suppress these estimates due to unreliable and unacceptable quality.</li>
+
+                                <li>Boot strapping techniques were used to obtain variance estimates and 95% confidence intervals of all estimates.</li>
+
+                            </ul>
+                    </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
