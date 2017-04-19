@@ -29,6 +29,7 @@ h1,h2,h3,h4 {
     width:30px;
     margin-bottom:5px;
 }
+
 @media(min-width:767px) {
     .navbar {
         /*padding: 20px 0;*/
@@ -43,6 +44,8 @@ h1,h2,h3,h4 {
 
     .navbar-inverse .navbar-brand {
         color: rgb(175,170,185);
+        font-size: 25px;
+        margin-top:18px;
     }
     .navbar-inverse{
         background:rgb(71,59,99);
