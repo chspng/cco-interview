@@ -81,7 +81,7 @@ h1,h2,h3,h4 {
 .btn.btn-outline { background-color: transparent; }
 
 .current-page{
-    color: white;    
+    color: red;    
 }
 
 .back-to-top {
